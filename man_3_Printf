@@ -1,0 +1,39 @@
+.TH OUr function _printf
+.SH NAME
+
+.B _printf
+\- format and print dat ain standard output
+
+.SH SYNOPSIS
+.B\_printf
+.RB FORMAT
+.RB [\| ARGUMENTS\|]
+.RB OPTIONS
+
+.SH DESCRIPTION
+,B _printf
+print ARGUMENT(s) according to FORMAT, or execute accordint to OPTION
+.PP
+
+.RS
+.nf
+% ARGUMENT
+%c print a single character
+%s print a string of characters
+%d print a decimal (base 10) number
+%i print an integer
+%% print a sing
+%r print a reversed string
+%b prints unsigned int to binary
+%u prints unsigned decimal
+%o prints number in octal
+%x %X prints number in hexadecimal
+%p prints address of a variable
+%l prints long int
+%h prints int sized inteher
+%R prints rot13
+
+.SH AUTHOR
+.PP
+written by incogany and kenyanrace
+

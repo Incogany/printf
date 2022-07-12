@@ -18,19 +18,19 @@ int _putchar(char c)
  */
 int op_string(va_list form)
 {
-	int lengts;
+	int lenghts;
 	char *str = va_arg(form, char *);
 
 	if (str == NULL)
 	{
 		str = "(null)";
 	}
-	lengts = 0;
+	lenghts = 0;
 	while (str[lengts])
 	{
 		lengts += _putchar(str[lengts]);
 	}
-	return (lengts);
+	return (lenghts);
 }
 
 /**
@@ -40,21 +40,21 @@ int op_string(va_list form)
  */
 int op_reverse(va_list form)
 {
-	int i = 0, longts = 0;
+	int i = 0, lenghtr = 0;
 	char *str = va_arg(form, char *);
 
 	while (str[i] != '\0')
 	{
 		i++;
 	}
-	longts = i;
+	lenghtr = i;
 	i--;
 	while (i >= 0)
 	{
 		_putchar(str[i]);
 		i--;
 	}
-	return (longts);
+	return (lenghtr);
 }
 
 /**
