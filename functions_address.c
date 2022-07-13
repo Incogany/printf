@@ -3,17 +3,17 @@
 #include "main.h"
 
 /**
- * op_adress - print adress
+ * op_address - print adress
  * @form: list of arguments passed to printf
  * Return: Number of characters
  */
-int op_adress(va_list form)
+int op_address(va_list form)
 {
 	void *addr;
 	unsigned long int num, count = 0;
 	int i = 0;
 	char hex[sizeof(int) * 8 + 1];
-	char 8str = "(nil)";
+	char *str = "(nil)";
 
 	addr = va_arg(form, void *);
 	num = (unsigned long int)addr;

@@ -28,7 +28,7 @@ int op_SString(va_list form)
 			if (divide > 9)
 				count += _putchar(divide + 55);
 			else
-				count += _puchar(divide + '0');
+				count += _putchar(divide + '0');
 			if (module > 9)
 				count += _putchar(module + 55);
 			else

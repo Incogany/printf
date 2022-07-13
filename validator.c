@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdarg.h>
-#include "holberton.h"
+#include "main.h"
 
 /**
  * vaidator - function
@@ -15,13 +15,13 @@ int validator(const char *format, va_list print1, MyPrint *ops1)
 
 	while (format && format[i])
 	{
-		if (format[i] == '%' && format [i + 1] 1= '%')
+		if (format[i] == '%' && format [i + 1] != '%')
 		{
 			if (format[i + 1] == '\0')
 				return (-1);
 			if (format[i + 1] == ' ')
 			{
-				while (format[i +1] == ' ')
+				while (format[i + 1] == ' ')
 					i++;
 			}
 			while (j < number)
@@ -36,7 +36,7 @@ int validator(const char *format, va_list print1, MyPrint *ops1)
 			if (i == number)
 				count += _putchar('%');
 		}
-		else if (format[i] == '%' && format[i + ] == '%')
+		else if (format[i] == '%' && format[i + 1] == '%')
 		{
 			count += _putchar('%');
 			i++;

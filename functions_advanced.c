@@ -99,12 +99,12 @@ int op_unsigned_decimal(va_list form)
 	unsigned int num = va_arg(form, unsigned int);
 	int divide = 1;
 
-	while (number / divide > 9)
+	while (num / divide > 9)
 		divide *= 10;
 	while (divide > 0)
 	{
-		count += _putchar(number / divide + '0');
-		number %= divide;
+		count += _putchar(num / divide + '0');
+		num %= divide;
 		divide /= 10;
 	}
 	return (count);

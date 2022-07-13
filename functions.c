@@ -26,9 +26,9 @@ int op_string(va_list form)
 		str = "(null)";
 	}
 	lenghts = 0;
-	while (str[lengts])
+	while (str[lenghts])
 	{
-		lengts += _putchar(str[lengts]);
+		lenghts += _putchar(str[lenghts]);
 	}
 	return (lenghts);
 }
@@ -62,7 +62,7 @@ int op_reverse(va_list form)
  * @form: name
  * Return: void
  */
-void op_character(va_list form)
+int op_character(va_list form)
 {
 	int lenghtc = 0;
 
@@ -75,7 +75,7 @@ void op_character(va_list form)
  * @form: name
  * Return: void
  */
-void op_integer(va_list form)
+int op_integer(va_list form)
 {
 	int integer = va_arg(form, int);
 	int div = 1;

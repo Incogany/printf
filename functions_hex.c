@@ -8,7 +8,7 @@
  */
 int op_hex(va_list form)
 {
-	int count = o, i = 0;
+	int count = 0, i = 0;
 	unsigned int num = va_arg(form, unsigned int);
 	int hex[sizeof(int) * 8 + 1];
 
@@ -36,7 +36,7 @@ int op_hex(va_list form)
  */
 int op_HEX(va_list form)
 {
-	int count = o, i = 0;
+	int count = 0, i = 0;
 	unsigned int num = va_arg(form, unsigned int);
 	int hex[sizeof(int) * 8 + 1];
 
