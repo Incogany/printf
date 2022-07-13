@@ -37,7 +37,7 @@ int op_SString(va_list form)
 		else
 			count += _putchar(str[i]);
 		i++;
-		ascii - str[i];
+		ascii = str[i];
 	}
 	return (count);
 }
